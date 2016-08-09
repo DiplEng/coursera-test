@@ -1,0 +1,89 @@
+/********** Base (desktop) styles **********/
+* {
+  box-sizing: border-box;
+}
+h1 {
+  margin-bottom: 15px;
+}
+
+p {
+	position: relative;
+	margin-right: 5%;
+  	margin-left: 5%;
+  	font-family: Helvetica;
+}
+
+/*all three columns properties*/
+.row > div
+{
+	border: 1px solid black;
+	margin-bottom: 20px;
+	background-color:#909090;
+	margin-left: 2%;
+	margin-right: 0;
+}
+/*all headers*/
+.row > div > div
+{
+	position: relative;
+	font-size: 15px;
+	width: 30%;
+	left: 70%;
+	top: 0%;
+	text-align: center;
+	border: 1px solid black;
+	height: 30px;
+	margin-top: -2px;
+	font-weight: bold;
+	margin-bottom: 20px;
+	padding: 7px;
+}
+
+#head1
+{
+	background-color: #F0F0AA;
+}
+#head2
+{
+	background-color: #0010AA;
+	color: #FFFFFF;
+}
+#head3
+{
+	background-color: #F0CCAA;
+}	
+
+/********** Desktop devices only **********/
+@media (min-width: 992px) {
+  .col-lg-4 {
+    float: left;
+    width: 30.66%;
+  }
+}
+
+
+/********** Tablet devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-6 {
+   		float: left;
+  		width: 47%;
+  }
+  .col-md-12 {
+   		float: left;
+    	width: 96%;
+  }
+}
+
+/********** Mobile devices only **********/
+@media (max-width: 767px) {
+  .col-sm-12 {
+    float: left;
+    width: 96%;
+  }
+}
+
+h1
+{
+	text-align: center;
+	font-family: Helvetica;
+}
